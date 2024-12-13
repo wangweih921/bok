@@ -11,6 +11,11 @@
   
   <title>
     
+      About 
+      
+      
+      |
+    
      lv2black
   </title>
 
@@ -101,69 +106,105 @@
 
 
       <div class="flex-container">
-        <div class="container index">
-  <div class="post-list">
-    <!-- 遍历渲染文章 -->
-    
-      <div class="post-item" title="互联网八股文">
-        <div class="time-m-d">2023-08-01</div>
-        <div class="title">
-          <a href="/2023/08/01/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AB%E8%82%A1%E6%96%87/">
-            
-              
-                <span>互联网八股文</span>
-              
-            
-          </a>
-        </div>
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <!-- 关于页 url形式：https://yoursite/about/ -->
+    <div class="container about-index">
+      <div class="markdown-body">
+        <hr>
+<h2 id="嗨，我是王维海-👋"><a href="#嗨，我是王维海-👋" class="headerlink" title="嗨，我是王维海 👋"></a>嗨，我是王维海 👋</h2><p>我是一位热衷于计算机的人，目前居住在苏州。在Java拥有4年的经验，我专注于[您的专业或专长的描述]。我热爱[与您领域相关的特定兴趣或爱好]。</p>
+<h3 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h3><ul>
+<li>[学位&#x2F;证书]：[大学&#x2F;机构名称]，[年份]</li>
+<li>[学位&#x2F;证书]：[大学&#x2F;机构名称]，[年份]</li>
+</ul>
+<h3 id="技能"><a href="#技能" class="headerlink" title="技能"></a>技能</h3><ul>
+<li>技能 1</li>
+<li>技能 2</li>
+<li>技能 3</li>
+</ul>
+<h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><ul>
+<li><p>[职位]，[公司&#x2F;组织名称]，[起始年份] - [结束年份]<br>职责和成就的描述。</p>
+</li>
+<li><p>[职位]，[公司&#x2F;组织名称]，[起始年份] - [结束年份]<br>职责和成就的描述。</p>
+</li>
+</ul>
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
+<li>[项目名称]：[简要描述]<ul>
+<li>使用的技术：[技术1]，[技术2]</li>
+<li>项目链接：[GitHub&#x2F;网站链接]</li>
+</ul>
+</li>
+</ul>
+<h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><p>您可以通过电子邮件联系我，邮箱地址为[<a href="mailto:&#57;&#50;&#x31;&#x77;&#x77;&#x68;&#64;&#112;&#x72;&#x6f;&#116;&#x6f;&#110;&#46;&#109;&#x65;">&#57;&#50;&#x31;&#x77;&#x77;&#x68;&#64;&#112;&#x72;&#x6f;&#116;&#x6f;&#110;&#46;&#109;&#x65;</a>]。让我们一起合作并共同参与令人兴奋的项目吧！</p>
+<h2 id="title-About-Me"><a href="#title-About-Me" class="headerlink" title="title: About Me"></a>title: About Me</h2><p><img src="/path/to/profile-picture.jpg" alt="Profile Picture"></p>
+<h2 id="Hi-I’m-Your-Name-👋"><a href="#Hi-I’m-Your-Name-👋" class="headerlink" title="Hi, I’m [Your Name] 👋"></a>Hi, I’m [Your Name] 👋</h2><p>I’m a passionate [profession&#x2F;interest] based in [location]. With [number] years of experience in [relevant field], I [description of your expertise or specialization]. I love [specific interests or hobbies related to your field].</p>
+<h3 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h3><ul>
+<li>[Degree&#x2F;Certification]: [University&#x2F;Institution], [Year]</li>
+<li>[Degree&#x2F;Certification]: [University&#x2F;Institution], [Year]</li>
+</ul>
+<h3 id="Skills"><a href="#Skills" class="headerlink" title="Skills"></a>Skills</h3><ul>
+<li>Skill 1</li>
+<li>Skill 2</li>
+<li>Skill 3</li>
+</ul>
+<h3 id="Work-Experience"><a href="#Work-Experience" class="headerlink" title="Work Experience"></a>Work Experience</h3><ul>
+<li><p>[Job Title] at [Company&#x2F;Organization], [Year] - [Year]<br>Description of responsibilities and achievements.</p>
+</li>
+<li><p>[Job Title] at [Company&#x2F;Organization], [Year] - [Year]<br>Description of responsibilities and achievements.</p>
+</li>
+</ul>
+<h3 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h3><ul>
+<li>[Project Name]: [Brief description]<ul>
+<li>Technologies used: [Technology 1], [Technology 2]</li>
+<li>Link to project: [GitHub&#x2F;Website link]</li>
+</ul>
+</li>
+</ul>
+<h3 id="Contact-Me"><a href="#Contact-Me" class="headerlink" title="Contact Me"></a>Contact Me</h3><p>You can reach out to me via email at [<a href="mailto:&#101;&#109;&#97;&#105;&#108;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#101;&#109;&#97;&#105;&#108;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a>]. Let’s connect and collaborate on exciting projects!</p>
+
       </div>
-    
-      <div class="post-item" title="超好入门的一个博客">
-        <div class="time-m-d">2023-07-14</div>
-        <div class="title">
-          <a href="/2023/07/14/%E8%B6%85%E5%A5%BD%E5%85%A5%E9%97%A8%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">
-            
-              
-                <span>超好入门的一个博客</span>
-              
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Java基础">
-        <div class="time-m-d">2023-07-13</div>
-        <div class="title">
-          <a href="/2023/07/13/Java%E5%9F%BA%E7%A1%80/">
-            
-              
-                <span>Java基础</span>
-              
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">2023-07-11</div>
-        <div class="title">
-          <a href="/2023/07/11/hello-world/">
-            
-              
-                <span>Hello World</span>
-              
-            
-          </a>
-        </div>
-      </div>
-    
-  </div>
-  <nav class="post-navigation">
-    
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
-</div>
+    </div>
+  
+
+  
 
         
 <div class="footer">
@@ -430,6 +471,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + about + '&url=' + https%3A%2F%2Fwangweih.gitee.io%2Fabout%2Findex.html + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://wangweih.gitee.io/about/index.html" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>

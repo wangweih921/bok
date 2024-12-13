@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-cn" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta name="author" content="lv2black" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      超好入门的一个博客 
+      
+      
+      |
+    
+     lv2black
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/my.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">Lv2black</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于我</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">超好入门的一个博客</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+          2023-07-20 09:00:40
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="Categories"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" title="博客教程">
+                    <b>#</b> 博客教程
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags mr-10" title="Tags"></i>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客">
+                    #博客
+                  </a>
+                </span>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/nodejs/" title="nodejs">
+                    #nodejs
+                  </a>
+                </span>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/git/" title="git">
+                    #git
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h1 id="快速入门一个博客-gitee-hexo"><a href="#快速入门一个博客-gitee-hexo" class="headerlink" title="快速入门一个博客(gitee+hexo)"></a>快速入门一个博客(gitee+hexo)</h1><p>是否为搭建一个博客而苦恼?</p>
+<p>是否因为网上的教程多样化而烦躁?</p>
+<p>是否看到教程中超多叫不上名字的名词而困扰?</p>
+<p>是否被多种技术的复杂操作而被劝退?</p>
+<p>是否看着别人超级漂亮的博客感觉比不上望而却步?</p>
+<p>那么废话不多说,请跟着我的教程一步一步的用最容易实现的方式将你的博客搭建起来吧</p>
+<h2 id="1-环境"><a href="#1-环境" class="headerlink" title="1.环境"></a>1.环境</h2><ol>
+<li><p><strong>一个Gitee的账号</strong></p>
+<p>注册就行</p>
+</li>
+<li><p><strong>Git</strong></p>
+<p>安装就行</p>
+</li>
+<li><p><strong>nodejs</strong></p>
+<p>安装+配环境</p>
+</li>
+</ol>
+<h2 id="2-目标"><a href="#2-目标" class="headerlink" title="2. 目标"></a>2. 目标</h2><p>请大家设想下,你有一篇图文并茂的笔记,而且想让所有人都看到;</p>
+<p>所以肯定不能放在自己电脑里,所以普遍做法是买个域名搞个服务器,东西放到自己服务器上;</p>
+<p>但我们没有服务器,也没有这个时间金钱成本去搞这个,就想简简单单的放在个公共区;放在知识平台下固然可以,但没法装*了,而且平台存储起来没有结构,没有好看的样式,你这优美的排版自然就浪费了</p>
+<p>所以我们选用代码托管平台中的pages功能,帮我们将源码”跑起来”</p>
+<p>选用Gitee的原因也很简单,因为github连接起来太慢了,不是所有人上网都那么Scienc</p>
+<p>还有一个问题就是实现图文并茂的代码可能实现起来没那么容易,不是前端出身或者就是简简单单想分享个技术,不过就是想好看点,没有必要花费时间去设计静态页面.</p>
+<p>那么我们就要用到用nodejs写的hexo博客框架去快速生成,而hexo中有很多优美的主题,让我们的博客也能更好看</p>
+<p>于是我们的大致方向就订好了,  </p>
+<p><strong>写内容  –&gt; hexo  —&gt; 好看的博客 —&gt;git发送 —&gt;gitee托管 —&gt;pages展示</strong></p>
+<h2 id="3-hexo框架的使用"><a href="#3-hexo框架的使用" class="headerlink" title="3.hexo框架的使用"></a>3.hexo框架的使用</h2><blockquote>
+<p>前提是你已经安装好了nodejs,因为我们要使用里面的npm工具下载hexo</p>
+<p>没有安装请看我另一篇博客</p>
+</blockquote>
+<ol>
+<li><p>下载hexo,进入命令行窗口,执行以下指令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="comment"># 查看hexo版本</span></span><br><span class="line">hexo -v </span><br><span class="line"><span class="comment"># 出现一堆版本号即安装成功</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装成功后,我们可以进行本地的博客部署</p>
+</li>
+<li><p>创建一个文件夹作为你的博客工作区,我以myblog为例,并将其初始化</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init D:\Desktop\myblog#这里写你自己的路径</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入到myblog,(直接点开文件夹进cmd也行)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入博客文件目录</span></span><br><span class="line"><span class="built_in">cd</span> D:\Desktop\myblog </span><br><span class="line"><span class="comment"># 安装npm</span></span><br><span class="line">npm install </span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">hexo server </span><br><span class="line"></span><br><span class="line"><span class="comment">#出现下面这个本地博客部署就算成功了</span></span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. <span class="comment"># </span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以直接访问给的url:<a href="http://localhost:4000,出现这个页面就算成功了">http://localhost:4000,出现这个页面就算成功了</a></p>
+<p><img src="https://s1.ax1x.com/2023/07/14/pC4na80.md.png" alt="pC4na80.md.png"></p>
+</li>
+<li><p>部署完成后我们为了更好的写博客,请简单学习一些操作</p>
+</li>
+<li><p>hexo的目录结构</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml       <span class="comment"># Hexo配置文件</span></span><br><span class="line">├── package.json      <span class="comment"># npm包管理文件</span></span><br><span class="line">├── scaffolds         <span class="comment"># 模板文件夹，用于创建新文章、页面等的模板</span></span><br><span class="line">├── <span class="built_in">source</span>            <span class="comment"># 资源文件夹，包含源码、Markdown文件、图片等</span></span><br><span class="line">│   ├── _drafts       <span class="comment"># 草稿文件夹，存放尚未发布的文章</span></span><br><span class="line">│   ├── _posts        <span class="comment"># 文章文件夹，存放已发布的文章</span></span><br><span class="line">│   ├── _pages        <span class="comment"># 页面文件夹，存放静态页面</span></span><br><span class="line">│   └── assets        <span class="comment"># 资源文件夹，存放图片、CSS、JavaScript等</span></span><br><span class="line">└── themes            <span class="comment"># 主题文件夹，存放不同主题的文件</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>以下是对目录结构中各文件和文件夹的简要说明：</p>
+<ul>
+<li><p><code>_config.yml</code>：Hexo的主配置文件，用于配置网站的基本信息、主题、插件等。</p>
+</li>
+<li><p><code>package.json</code>：npm包管理文件，记录了Hexo所依赖的插件和工具。</p>
+</li>
+<li><p><code>scaffolds</code>：模板文件夹，用于创建新文章、页面等的模板，可以自定义其中的模板文件。</p>
+</li>
+<li><p><code>source</code></p>
+<p>：资源文件夹，包含所有的源码、Markdown文件、图片等。</p>
+<ul>
+<li><code>_drafts</code>：草稿文件夹，用于存放尚未发布的文章，这些文章不会被生成到最终的网站中。</li>
+<li><code>_posts</code>：文章文件夹，用于存放已发布的文章，这些文章会生成到最终的网站中。</li>
+<li><code>_pages</code>：页面文件夹，用于存放静态页面，如关于页面、联系页面等。</li>
+<li><code>assets</code>：资源文件夹，用于存放图片、CSS、JavaScript等其他资源文件。</li>
+</ul>
+</li>
+<li><p><code>themes</code>：主题文件夹，存放不同主题的文件，每个主题都有自己的文件结构和样式。</p>
+</li>
+</ul>
+<p>看着复杂?无所谓,了解下就行</p>
+</li>
+<li><p>那么现在可以开始写一篇博客了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建一篇新博客 叫My New Blog</span></span><br><span class="line">hexo new <span class="string">&quot;My New Blog&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这将在source&#x2F;_posts&#x2F;目录下创建一个以日期和标题命名的Markdown文件，其中包含了博客文章的基本结构。你可以打开进行编辑,或者将已经写好的内容进行复制,但注意不要删除上面的—包裹的内容</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pC4n7ad"><img src="https://s1.ax1x.com/2023/07/14/pC4n7ad.png" alt="pC4n7ad.png"></a></p>
+</li>
+<li><p>当你写好你的内容后,此时还没将你的文章加载成网页花里胡哨的形式,<strong>此时仅仅是md文档</strong>,所有需要更新生成你的Hexo网站</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在命令行终端中，使用以下命令生成Hexo网站：</span></span><br><span class="line">hexo generate       <span class="comment">#背不住单词?也可以使用简写 hexo g</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成完成后，使用以下命令启动Hexo的本地服务器</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment">#去查看你的博客是否生成</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>到此,我们的第一阶段完成</p>
+</li>
+</ol>
+<h2 id="4-gitee的部署"><a href="#4-gitee的部署" class="headerlink" title="4.gitee的部署"></a>4.gitee的部署</h2><blockquote>
+<p>在将博客传到码云(gitee)之前,需要将gitee进行一个部署,以及对hexo进行部分配置,方便找到gitee并上传</p>
+<p>使用的前提是已经安装好了git(去<a target="_blank" rel="noopener" href="https://git-scm.com/downloads%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%AE%89%E8%A3%85%E5%8C%85,%E4%B8%80%E8%B7%AFnext%E5%AE%89%E8%A3%85">https://git-scm.com/downloads下一个安装包,一路next安装</a>)</p>
+</blockquote>
+<ol>
+<li><p>创建仓库以及配置</p>
+<p>按照步骤操作点击  +   —&gt;创建仓库,进入正常填写即可</p>
+<img src="https://s1.ax1x.com/2023/07/14/pC4KhHe.png" style="zoom:50%;" />
+
+<img src="https://s1.ax1x.com/2023/07/14/pC4M9Cn.md.png"  style="zoom:70%;">
+
+
+
+
+</li>
+<li><p>配置git</p>
+<p>进入命令行窗口,将生成的指令复制进来执行(一行一行复制)</p>
+<p><img src="https://s1.ax1x.com/2023/07/14/pC4MW2q.png"></p>
+<p>推荐配置并使用密钥,实现免密码登录,可以看<a target="_blank" rel="noopener" href="https://help.gitee.com/repository/ssh-key/generate-and-add-ssh-public-key">官方密钥生成教程</a></p>
+<ul>
+<li><p>生成公钥</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;# 邮箱&quot;</span> </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>三次回车</p>
+</li>
+<li><p>进入 C:\Users\主机名.ssh 目录，把 id_rsa.pub 里面的信息复制到码云的 SSH公钥 中即可</p>
+</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2023/07/14/pC4MLGR.png"></p>
+</li>
+<li><p>开启pages服务</p>
+<blockquote>
+<p>请注意顺序,一步一步来</p>
+</blockquote>
+<ul>
+<li><p>配置完成后进行,点击初始化readme,使仓库不再是空仓库</p>
+</li>
+<li><p>点击管理–&gt;仓库信息–&gt;基本信息–&gt;开源</p>
+<p><img src="https://s1.ax1x.com/2023/07/14/pC411K0.png"></p>
+</li>
+<li><p>点击管理旁边的服务—&gt;选择Gitee pages</p>
+<p>第一次可能需要实名审核,按照要求去做就好</p>
+</li>
+<li><p><img src="https://s1.ax1x.com/2023/07/14/pC41aG9.png"></p>
+</li>
+<li><p>点击启动,会给出一个url,等我们将博客传到里面,直接访问这个地址就可以看到你的博客了</p>
+</li>
+</ul>
+</li>
+<li><p>配置hexo</p>
+<ul>
+<li><p>进入博客文件夹执行指令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>Hexo 提供了快速方便的一键部署功能,上面是安装 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a>。</p>
+</li>
+<li><p>打开博客文件夹,配置_config.yml文件,配置git的地址</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="comment">#以下是自己码云下的http clone地址</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">自己的地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h2 id="5-推送到码云并部署"><a href="#5-推送到码云并部署" class="headerlink" title="5.推送到码云并部署"></a>5.推送到码云并部署</h2><ol>
+<li><p>写好博客后,进入博客文件夹cmd</p>
+<p>执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo cl <span class="comment">#清理缓存</span></span><br><span class="line">hexo g <span class="comment">#生成网站文件</span></span><br><span class="line">hexo d <span class="comment">#推送本地代码到码云，第一推送可能需要输入码云的账号密码 </span></span><br><span class="line"></span><br><span class="line"><span class="comment">##也可以两步并一步 执行hexo g -d</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>推送后,点击更新</p>
+<p><img src="https://s1.ax1x.com/2023/07/14/pC43hY4.png"></p>
+</li>
+<li><p>访问给出的地址,就可以看到你的博客了</p>
+</li>
+</ol>
+<h2 id="最后注意"><a href="#最后注意" class="headerlink" title="最后注意"></a>最后注意</h2><h3 id="后续可能更新"><a href="#后续可能更新" class="headerlink" title="后续可能更新:"></a>后续可能更新:</h3><ol>
+<li>如何用主题变得花里胡哨</li>
+<li>图片和图床的使用</li>
+<li>标签分类等用法</li>
+<li>华丽呼哨的功能及插件</li>
+<li>监听及自动部署</li>
+</ol>
+<h3 id="每次写完新的博客别忘了重新上传并更新发布-切记切记"><a href="#每次写完新的博客别忘了重新上传并更新发布-切记切记" class="headerlink" title="每次写完新的博客别忘了重新上传并更新发布,切记切记"></a>每次写完新的博客别忘了重新上传并更新发布,切记切记</h3>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2023/07/13/Java%E5%9F%BA%E7%A1%80/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+              2023-07-20 09:00:40
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="Categories"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" title="博客教程">
+                        <b>#</b> 博客教程
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags mr-10" title="Tags"></i>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客">
+                        #博客
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/nodejs/" title="nodejs">
+                        #nodejs
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/git/" title="git">
+                        #git
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2023/08/01/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AB%E8%82%A1%E6%96%87/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2-gitee-hexo"><span class="toc-text">快速入门一个博客(gitee+hexo)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%8E%AF%E5%A2%83"><span class="toc-text">1.环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%9B%AE%E6%A0%87"><span class="toc-text">2. 目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-hexo%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">3.hexo框架的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-gitee%E7%9A%84%E9%83%A8%E7%BD%B2"><span class="toc-text">4.gitee的部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%8E%A8%E9%80%81%E5%88%B0%E7%A0%81%E4%BA%91%E5%B9%B6%E9%83%A8%E7%BD%B2"><span class="toc-text">5.推送到码云并部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E6%B3%A8%E6%84%8F"><span class="toc-text">最后注意</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD%E5%8F%AF%E8%83%BD%E6%9B%B4%E6%96%B0"><span class="toc-text">后续可能更新:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%8F%E6%AC%A1%E5%86%99%E5%AE%8C%E6%96%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%AB%E5%BF%98%E4%BA%86%E9%87%8D%E6%96%B0%E4%B8%8A%E4%BC%A0%E5%B9%B6%E6%9B%B4%E6%96%B0%E5%8F%91%E5%B8%83-%E5%88%87%E8%AE%B0%E5%88%87%E8%AE%B0"><span class="toc-text">每次写完新的博客别忘了重新上传并更新发布,切记切记</span></a></li></ol></li></ol></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="gitee" target="_blank" rel="noopener" href="https://gitee.com/wangweih">
+            <i class="iconfont icon-gitee"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="921wwh@proton.me">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href="2876192498">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://gitee.com/wangweih">Copyright © 2023 Lv2black</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E8%B6%85%E5%A5%BD%E5%85%A5%E9%97%A8%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2 + '&url=' + https%3A%2F%2Fwangweih.gitee.io%2F2023%2F07%2F14%2F%25E8%25B6%2585%25E5%25A5%25BD%25E5%2585%25A5%25E9%2597%25A8%25E7%259A%2584%25E4%25B8%2580%25E4%25B8%25AA%25E5%258D%259A%25E5%25AE%25A2%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://wangweih.gitee.io/2023/07/14/%E8%B6%85%E5%A5%BD%E5%85%A5%E9%97%A8%E7%9A%84%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
